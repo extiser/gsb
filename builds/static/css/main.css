@@ -486,7 +486,7 @@ blockquote {
   }
 }
 
-.paragraph, .strong, .about-content-body strong, .engineering-services-content strong, em, ul, .about-content-body p, .engineering-services-content p, .object-content-description p {
+.paragraph, .strong, .engineering-services-content strong, .about-content-body strong, em, ul, .engineering-services-content p, .about-content-body p, .object-content-description p {
   display: block;
   margin-bottom: 30px;
   letter-spacing: .05em;
@@ -495,7 +495,7 @@ blockquote {
   font-size: 1.125em;
 }
 
-.strong, .about-content-body strong, .engineering-services-content strong {
+.strong, .engineering-services-content strong, .about-content-body strong {
   font-family: "Lato-Black";
 }
 
@@ -551,28 +551,40 @@ body {
   }
 }
 
-.wrapper, .about-content, .engineering-services-content, .header__wrapper, .main-slider-bottom__wrapper, .main-slider-center__wrapper, .object-content, .objects-content {
+.wrapper, .engineering-services-content, .about-content, .header__wrapper, .main-slider-bottom__wrapper, .main-slider-center__wrapper, .object-content, .objects-content {
   position: relative;
   width: 1180px;
   margin: auto;
 }
 
 @media screen and (max-width: 1200px) {
-  .wrapper, .about-content, .engineering-services-content, .header__wrapper, .main-slider-bottom__wrapper, .main-slider-center__wrapper, .object-content, .objects-content {
+  .wrapper, .engineering-services-content, .about-content, .header__wrapper, .main-slider-bottom__wrapper, .main-slider-center__wrapper, .object-content, .objects-content {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .wrapper, .about-content, .engineering-services-content, .header__wrapper, .main-slider-bottom__wrapper, .main-slider-center__wrapper, .object-content, .objects-content {
+  .wrapper, .engineering-services-content, .about-content, .header__wrapper, .main-slider-bottom__wrapper, .main-slider-center__wrapper, .object-content, .objects-content {
     width: 95%;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .wrapper, .about-content, .engineering-services-content, .header__wrapper, .main-slider-bottom__wrapper, .main-slider-center__wrapper, .object-content, .objects-content {
+  .wrapper, .engineering-services-content, .about-content, .header__wrapper, .main-slider-bottom__wrapper, .main-slider-center__wrapper, .object-content, .objects-content {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 800px) {
+  .engineering-services-content {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.engineering-services-content__title {
+  width: 100%;
+  text-align: center;
 }
 
 .about-content {
@@ -631,18 +643,6 @@ body {
     width: 90%;
     margin: auto;
   }
-}
-
-@media screen and (max-width: 800px) {
-  .engineering-services-content {
-    width: 90%;
-    margin: auto;
-  }
-}
-
-.engineering-services-content__title {
-  width: 100%;
-  text-align: center;
 }
 
 .footer {
